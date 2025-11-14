@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== DESKTOP VERSION ===== -->
+  <div class="desktop-wrapper">
+    <!-- Desktop Navbar -->
+    <div class="desktop-navbar">
+      <a href="#" class="desktop-logo">
+        <div class="desktop-logo-icon">A</div>
+        <div class="desktop-logo-text">Aurellia</div>
+      </a>
+      <div class="desktop-nav-menu">
+        <a href="index.html" class="desktop-nav-link active">Home</a>
+        <a href="#" class="desktop-nav-link">Cards</a>
+        <a href="account.html" class="desktop-nav-link">Transactions</a>
+        <a href="#" class="desktop-nav-link">Profile</a>
+      </div>
+    </div>
+
+    <!-- Desktop Header -->
+    <div class="desktop-header">
+      <div class="user-welcome">
+        <div class="greeting-text">
+          <h3>Hello,</h3>
+          <h1>Aurellia!</h1>
+        </div>
+        <div class="user-avatar">A</div>
+      </div>
+    </div>
+
+    <!-- Cards Section Desktop -->
+    <div class="desktop-cards-section">
+      <div class="section-header-desktop">
+        <h2>Your Visa Cards</h2>
+        <a href="#" class="see-all-desktop">See All</a>
+      </div>
+      <div class="desktop-cards-grid">
+        <div class="card-desktop">
+          <div class="card-type-desktop">
+            <span class="card-chip-desktop">💳</span>
+            <span class="card-badge-desktop">Premium</span>
+          </div>
+          <div class="card-number-desktop">4000 5327 2123 2016</div>
+          <div class="card-holder-desktop">
+            <span>Aurellia</span>
+            <span class="visa-logo-desktop">VISA</span>
+          </div>
+        </div>
+        <div class="card-desktop">
+          <div class="card-type-desktop">
+            <span class="card-chip-desktop">💳</span>
+            <span class="card-badge-desktop">Standard</span>
+          </div>
+          <div class="card-number-desktop">4000 5327 2123 2017</div>
+          <div class="card-holder-desktop">
+            <span>Aurellia</span>
+            <span class="visa-logo-desktop">VISA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Grid Desktop -->
+    <div class="desktop-content">
+      <!-- Services Box -->
+      <div class="services-box">
+        <h2>Services</h2>
+        <div class="services-grid-desktop">
+          <a href="#" class="service-item-desktop">
+            <div class="service-icon-desktop">
+              <span class="material-symbols-outlined">credit_card</span>
+            </div>
+            <div class="service-label-desktop">Card</div>
+          </a>
+          <a href="#" class="service-item-desktop">
+            <div class="service-icon-desktop">
+              <span class="material-symbols-outlined">attach_money</span>
+            </div>
+            <div class="service-label-desktop">Finance</div>
+          </a>
+          <a href="#" class="service-item-desktop">
+            <div class="service-icon-desktop">
+              <span class="material-symbols-outlined">arrow_upward</span>
+            </div>
+            <div class="service-label-desktop">Top-Up</div>
+          </a>
+          <a href="#" class="service-item-desktop">
+            <div class="service-icon-desktop">
+              <span class="material-symbols-outlined">help</span>
+            </div>
+            <div class="service-label-desktop">Help</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Activity Box -->
+      <div class="activity-box">
+        <h2>Recent Activity</h2>
+        <div class="activity-list-desktop">
+          <div class="activity-item-desktop">
+            <div class="activity-icon-desktop deposit">
+              <span class="material-symbols-outlined">arrow_downward</span>
+            </div>
+            <div class="activity-details-desktop">
+              <div class="activity-title-desktop">Deposit</div>
+              <div class="activity-amount-desktop deposit">+Rp15.810.000,-</div>
+              <div class="activity-location-desktop">
+                <span class="material-symbols-outlined">location_on</span>
+                <span>Bank Mandiri ATM</span>
+              </div>
+            </div>
+            <div class="activity-time-desktop">
+              <div>11:57 AM</div>
+              <div class="activity-date-desktop">11 March 2022</div>
+            </div>
+          </div>
+
+          <div class="activity-item-desktop">
+            <div class="activity-icon-desktop withdraw">
+              <span class="material-symbols-outlined">arrow_upward</span>
+            </div>
+            <div class="activity-details-desktop">
+              <div class="activity-title-desktop">Withdraw</div>
+              <div class="activity-amount-desktop withdraw">-Rp5.210.000,-</div>
+              <div class="activity-location-desktop">
+                <span class="material-symbols-outlined">location_on</span>
+                <span>Bank Mandiri ATM</span>
+              </div>
+            </div>
+            <div class="activity-time-desktop">
+              <div>11:57 AM</div>
+              <div class="activity-date-desktop">11 March 2022</div>
+            </div>
+          </div>
+
+          <div class="activity-item-desktop">
+            <div class="activity-icon-desktop withdraw">
+              <span class="material-symbols-outlined">arrow_upward</span>
+            </div>
+            <div class="activity-details-desktop">
+              <div class="activity-title-desktop">Withdraw</div>
+              <div class="activity-amount-desktop withdraw">-Rp2.000.000,-</div>
+              <div class="activity-location-desktop">
+                <span class="material-symbols-outlined">location_on</span>
+                <span>Bank Mandiri ATM</span>
+              </div>
+            </div>
+            <div class="activity-time-desktop">
+              <div>09:15 AM</div>
+              <div class="activity-date-desktop">10 March 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop Bottom Navigation -->
+    <div class="bottom-nav-desktop">
+      <a href="#" class="nav-item-desktop active">
+        <span class="material-symbols-outlined">home</span>
+      </a>
+      <a href="#" class="nav-item-desktop">
+        <span class="material-symbols-outlined">credit_card</span>
+      </a>
+      <a href="#" class="nav-item-desktop">
+        <span class="material-symbols-outlined">chat_bubble</span>
+      </a>
+      <a href="#" class="nav-item-desktop">
+        <span class="material-symbols-outlined">person</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ===== MOBILE VERSION ===== -->
+  <div class="mobile-wrapper">
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <div>9:41</div>
+      <div class="status-icons">
+        <span class="material-symbols-outlined">signal_cellular_alt</span>
+        <span class="material-symbols-outlined">wifi</span>
+        <span class="material-symbols-outlined">battery_full</span>
+      </div>
+    </div>
+
+    <!-- Mobile Navbar -->
+    <div class="mobile-navbar">
+      <a href="#" class="mobile-logo">
+        <div class="mobile-logo-icon">A</div>
+        <div class="mobile-logo-text">Aurellia</div>
+      </a>
+      <div class="mobile-menu-icon">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <div class="greeting">Hello,</div>
+      <div class="user-info">
+        <div class="username">Aurellia!</div>
+        <div class="avatar">A</div>
+      </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">Your Visa</div>
+        <a href="#" class="see-all">See All</a>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-type">
+            <span class="card-chip">💳</span>
+            <span class="card-badge">Premium</span>
+          </div>
+          <div class="card-number">4000 5327 2123 2016</div>
+          <div class="card-holder">
+            <span>Aurellia</span>
+            <span class="visa-logo">VISA</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-type">
+            <span class="card-chip">💳</span>
+            <span class="card-badge">Standard</span>
+          </div>
+          <div class="card-number">4000 5327 2123 2017</div>
+          <div class="card-holder">
+            <span>Aurellia</span>
+            <span class="visa-logo">VISA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">Services</div>
+        <a href="#" class="see-all">See All</a>
+      </div>
+      <div class="services-grid">
+        <a href="#" class="service-item">
+          <div class="service-icon">
+            <span class="material-symbols-outlined">credit_card</span>
+          </div>
+          <div class="service-label">Card</div>
+        </a>
+        <a href="#" class="service-item">
+          <div class="service-icon">
+            <span class="material-symbols-outlined">attach_money</span>
+          </div>
+          <div class="service-label">Finance</div>
+        </a>
+        <a href="#" class="service-item">
+          <div class="service-icon">
+            <span class="material-symbols-outlined">arrow_upward</span>
+          </div>
+          <div class="service-label">Top-Up</div>
+        </a>
+        <a href="#" class="service-item">
+          <div class="service-icon">
+            <span class="material-symbols-outlined">help</span>
+          </div>
+          <div class="service-label">Help</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Activity Section -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">Activity</div>
+        <a href="#" class="see-all">See All</a>
+      </div>
+      <div class="activity-list">
+        <div class="activity-item">
+          <div class="activity-icon deposit">
+            <span class="material-symbols-outlined">arrow_downward</span>
+          </div>
+          <div class="activity-details">
+            <div class="activity-title">Deposit</div>
+            <div class="activity-amount deposit">+Rp15.810.000,-</div>
+            <div class="activity-location">
+              <span class="material-symbols-outlined">location_on</span>
+              <span>Bank Mandiri ATM</span>
+            </div>
+          </div>
+          <div class="activity-time">
+            <div>11:57 AM</div>
+            <div class="activity-date">11 March 2022</div>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-icon withdraw">
+            <span class="material-symbols-outlined">arrow_upward</span>
+          </div>
+          <div class="activity-details">
+            <div class="activity-title">Withdraw</div>
+            <div class="activity-amount withdraw">-Rp5.210.000,-</div>
+            <div class="activity-location">
+              <span class="material-symbols-outlined">location_on</span>
+              <span>Bank Mandiri ATM</span>
+            </div>
+          </div>
+          <div class="activity-time">
+            <div>11:57 AM</div>
+            <div class="activity-date">11 March 2022</div>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-icon withdraw">
+            <span class="material-symbols-outlined">arrow_upward</span>
+          </div>
+          <div class="activity-details">
+            <div class="activity-title">Withdraw</div>
+            <div class="activity-amount withdraw">-Rp2.000.000,-</div>
+            <div class="activity-location">
+              <span class="material-symbols-outlined">location_on</span>
+              <span>Bank Mandiri ATM</span>
+            </div>
+          </div>
+          <div class="activity-time">
+            <div>09:15 AM</div>
+            <div class="activity-date">10 March 2022</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <a href="index.html" class="nav-item active">
+        <span class="material-symbols-outlined">home</span>
+      </a>
+      <a href="account.html" class="nav-item">
+        <span class="material-symbols-outlined">credit_card</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="material-symbols-outlined">chat_bubble</span>
+      </a>
+      <a href="#" class="nav-item">
+        <span class="material-symbols-outlined">person</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

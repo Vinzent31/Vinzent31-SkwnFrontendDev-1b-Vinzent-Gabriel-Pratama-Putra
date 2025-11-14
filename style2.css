@@ -1,0 +1,737 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #f5f5f5;
+      min-height: 100vh;
+    }
+
+    /* ===== DESKTOP VERSION ===== */
+    .desktop-wrapper {
+      display: block;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 60px;
+      padding-bottom: 120px;
+    }
+
+    /* Desktop Navbar */
+    .desktop-navbar {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 20px 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .desktop-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .desktop-logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #00b4d8, #0077b6);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .desktop-logo-text {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .desktop-nav-menu {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .desktop-nav-link {
+      text-decoration: none;
+      color: #666;
+      font-size: 15px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .desktop-nav-link:hover,
+    .desktop-nav-link.active {
+      color: #0077b6;
+    }
+
+    /* Desktop Finance Card */
+    .desktop-finance-card {
+      background: linear-gradient(135deg, #00b4d8, #0077b6);
+      border-radius: 24px;
+      padding: 50px;
+      color: white;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 30px rgba(0, 119, 182, 0.3);
+    }
+
+    .desktop-finance-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+
+    .desktop-back-btn {
+      width: 48px;
+      height: 48px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .desktop-back-btn:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .desktop-back-btn span {
+      font-size: 24px;
+    }
+
+    .desktop-notification-btn {
+      width: 48px;
+      height: 48px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      transition: background-color 0.3s;
+    }
+
+    .desktop-notification-btn:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .desktop-notification-btn span {
+      font-size: 24px;
+    }
+
+    .desktop-notification-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #ff4444;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: 2px solid white;
+    }
+
+    .desktop-finance-title {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      opacity: 0.9;
+    }
+
+    .desktop-balance {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .desktop-date {
+      font-size: 16px;
+      opacity: 0.8;
+    }
+
+    /* Desktop Content */
+    .desktop-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    /* Statistics Box */
+    .desktop-stats-box {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .desktop-section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .desktop-section-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .desktop-see-all {
+      font-size: 14px;
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .desktop-see-all:hover {
+      background-color: #e6f4f9;
+    }
+
+    .desktop-chart {
+      width: 100%;
+      height: 250px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .desktop-chart svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .desktop-chart-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #888;
+      margin-top: 10px;
+    }
+
+    /* History Box */
+    .desktop-history-box {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .desktop-history-filters {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .desktop-filter-btn {
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      color: #666;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .desktop-filter-btn:hover {
+      border-color: #0077b6;
+      color: #0077b6;
+    }
+
+    .desktop-filter-btn.active {
+      background-color: #0077b6;
+      color: white;
+      border-color: #0077b6;
+    }
+
+    .desktop-history-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .desktop-history-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .desktop-history-item:hover {
+      background-color: #f0f0f0;
+      transform: translateX(5px);
+    }
+
+    .desktop-history-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .desktop-history-icon.deposit {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    .desktop-history-icon.withdraw {
+      background-color: #ffebee;
+      color: #c62828;
+    }
+
+    .desktop-history-details {
+      flex: 1;
+    }
+
+    .desktop-history-type {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 6px;
+    }
+
+    .desktop-history-amount {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .desktop-history-amount.deposit {
+      color: #2e7d32;
+    }
+
+    .desktop-history-amount.withdraw {
+      color: #c62828;
+    }
+
+    .desktop-history-location {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    .desktop-history-location span {
+      font-size: 16px;
+    }
+
+    .desktop-history-time {
+      text-align: right;
+    }
+
+    .desktop-history-date {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+
+    .desktop-history-hour {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    /* Desktop Bottom Navigation */
+    .bottom-nav-desktop {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 16px 40px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      display: flex;
+      gap: 60px;
+      z-index: 1000;
+    }
+
+    .nav-item-desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #999;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .nav-item-desktop.active {
+      color: #0077b6;
+    }
+
+    .nav-item-desktop span {
+      font-size: 28px;
+    }
+
+    .nav-item-desktop:hover {
+      color: #0077b6;
+      transform: translateY(-3px);
+    }
+
+    /* ===== MOBILE VERSION ===== */
+    .mobile-wrapper {
+      display: none;
+    }
+
+    /* ===== RESPONSIVE - MOBILE ===== */
+    @media (max-width: 768px) {
+      body {
+        background-color: #f8f8f8;
+        padding: 0;
+      }
+
+      .desktop-wrapper {
+        display: none;
+      }
+
+      .mobile-wrapper {
+        display: block;
+        max-width: 480px;
+        margin: 0 auto;
+        background-color: #fff;
+        min-height: 100vh;
+        position: relative;
+        padding-bottom: 80px;
+      }
+
+      /* Status Bar */
+      .status-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        background: linear-gradient(135deg, #00b4d8, #0077b6);
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .status-icons {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+      }
+
+      .status-icons span {
+        font-size: 16px;
+      }
+
+      /* Mobile Finance Header */
+      .mobile-finance-header {
+        background: linear-gradient(135deg, #00b4d8, #0077b6);
+        padding: 20px;
+        color: white;
+        border-radius: 0 0 30px 30px;
+      }
+
+      .mobile-header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+
+      .mobile-back-btn {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .mobile-back-btn span {
+        font-size: 20px;
+      }
+
+      .mobile-header-title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .mobile-notification-btn {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .mobile-notification-btn span {
+        font-size: 20px;
+      }
+
+      .mobile-notification-dot {
+        width: 8px;
+        height: 8px;
+        background-color: #ff4444;
+        border-radius: 50%;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        border: 2px solid white;
+      }
+
+      .mobile-balance-info {
+        text-align: left;
+      }
+
+      .mobile-balance {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .mobile-date {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      /* Statistics Section */
+      .mobile-section {
+        padding: 24px 20px;
+      }
+
+      .mobile-section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .mobile-section-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+      }
+
+      .mobile-see-all {
+        font-size: 13px;
+        color: #0077b6;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .mobile-chart {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 16px;
+        position: relative;
+      }
+
+      .mobile-chart svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .mobile-chart-labels {
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        color: #888;
+        margin-top: 8px;
+      }
+
+      /* History Section */
+      .mobile-history-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .mobile-category-btn {
+        padding: 6px 16px;
+        border-radius: 16px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        color: #666;
+        font-size: 13px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+      }
+
+      .mobile-category-btn span {
+        font-size: 18px;
+      }
+
+      .mobile-history-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 20px;
+      }
+
+      .mobile-history-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 16px;
+        background-color: #f8f9fa;
+        border-radius: 16px;
+      }
+
+      .mobile-history-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        flex-shrink: 0;
+      }
+
+      .mobile-history-icon.deposit {
+        background-color: #e8f5e9;
+        color: #2e7d32;
+      }
+
+      .mobile-history-icon.withdraw {
+        background-color: #ffebee;
+        color: #c62828;
+      }
+
+      .mobile-history-details {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .mobile-history-type {
+        font-size: 14px;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 4px;
+      }
+
+      .mobile-history-amount {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+
+      .mobile-history-amount.deposit {
+        color: #2e7d32;
+      }
+
+      .mobile-history-amount.withdraw {
+        color: #c62828;
+      }
+
+      .mobile-history-location {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 11px;
+        color: #888;
+      }
+
+      .mobile-history-location span {
+        font-size: 14px;
+      }
+
+      .mobile-history-time {
+        text-align: right;
+        flex-shrink: 0;
+      }
+
+      .mobile-history-date {
+        font-size: 11px;
+        color: #888;
+        margin-bottom: 4px;
+        white-space: nowrap;
+      }
+
+      .mobile-history-hour {
+        font-size: 11px;
+        color: #aaa;
+      }
+
+      /* Bottom Navigation Mobile */
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 480px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 20px 16px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+        z-index: 1000;
+      }
+
+      .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #999;
+        flex: 1;
+        padding: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-item.active {
+        color: #0077b6;
+      }
+
+      .nav-item span {
+        font-size: 26px;
+      }
+
+      .nav-item:active {
+        transform: scale(0.9);
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1200px) {
+      .desktop-wrapper {
+        padding: 30px 40px;
+      }
+
+      .desktop-content {
+        grid-template-columns: 1fr;
+      }
+    }
